@@ -22,6 +22,10 @@ const questionSixAnswer = () => {
   return "Quesion 6.\nPlease refer to src/payloadEncoding.ts, and the corresponding test file. To execute tests, execute `npm run build && npm run test`";
 };
 
+const questionSevenAnswer = () => {
+  return "Quesion 7.\nPlease refer to src/divideAndConquer.ts, and the corresponding test file. To execute tests, execute `npm run build && npm run test`";
+};
+
 const questionXAnswer = () => {
   return "Quesion X.\n";
 };
@@ -34,6 +38,7 @@ const getAnswers = () => {
     questionFourAnswer(),
     questionFiveAnswer(),
     questionSixAnswer(),
+    questionSevenAnswer(),
   ];
 };
 
