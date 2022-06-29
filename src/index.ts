@@ -1,5 +1,5 @@
-import { getMessage } from "./getMessage";
+import { getAnswers } from "./getAnswers";
 
-const message = getMessage();
+const message = getAnswers();
 
-console.log(message);
+console.log(message.join("\n\n"));
