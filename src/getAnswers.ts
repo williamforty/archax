@@ -10,12 +10,21 @@ const questionThreeAnswer = () => {
   return "Quesion 3.\nA Map in JavaScript of course is similar to an array, however it is one where there is an explicit key/value pair for each item it contains. Maps ensure that each key is unique. An object can achieve the same by using object properties, which can indeed be overwritten in the same way you might with a Map.set() call. An advantage of using a Map however is that it is easily iterable, and in a predictable order that corresponds with the order the items were inserted. There are also performance benefits of using a Map, when frequently adding/removing items based on the key. Therefore a good use case for a Map might be for maintaining a large in-memory list of items that is constantly changing. Perhaps something like a Redis in-memory database of items, where speed is an important factor.";
 };
 
+const questionFourAnswer = () => {
+  return "Quesion 4.\nA common way to substitute a local JavaScript library or module is with `npm link`. Under the hood this works by creating a symbolic link to another directory. Whilst this works, in my experience it can be fiddly to use, particularly when combined with executing various other npm commands such as install. Another alternative might be to have a local npm registry. Once set up you could reroute the package manager to the local registry using .npmrc";
+};
+
 const questionXAnswer = () => {
   return "Quesion X.\n";
 };
 
 const getAnswers = () => {
-  return [questionOneAnswer(), questionTwoAnswer(), questionThreeAnswer()];
+  return [
+    questionOneAnswer(),
+    questionTwoAnswer(),
+    questionThreeAnswer(),
+    questionFourAnswer(),
+  ];
 };
 
 export { getAnswers };
