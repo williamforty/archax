@@ -14,6 +14,14 @@ const questionFourAnswer = () => {
   return "Quesion 4.\nA common way to substitute a local JavaScript library or module is with `npm link`. Under the hood this works by creating a symbolic link to another directory. Whilst this works, in my experience it can be fiddly to use, particularly when combined with executing various other npm commands such as install. Another alternative might be to have a local npm registry. Once set up you could reroute the package manager to the local registry using .npmrc";
 };
 
+const questionFiveAnswer = () => {
+  return "Quesion 5.\nPlease refer to src/payloadEncoding.ts, and the corresponding test file. To execute tests, execute `npm run build && npm run test`";
+};
+
+const questionSixAnswer = () => {
+  return "Quesion 6.\nPlease refer to src/payloadEncoding.ts, and the corresponding test file. To execute tests, execute `npm run build && npm run test`";
+};
+
 const questionXAnswer = () => {
   return "Quesion X.\n";
 };
@@ -24,6 +32,8 @@ const getAnswers = () => {
     questionTwoAnswer(),
     questionThreeAnswer(),
     questionFourAnswer(),
+    questionFiveAnswer(),
+    questionSixAnswer(),
   ];
 };
 
