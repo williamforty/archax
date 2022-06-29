@@ -10,8 +10,8 @@ const fakeDatabaseData: Array<Record> = [
 ];
 
 class Employee {
-  public fetchAllRecords(): Array<number> {
-    return fakeDatabaseData.map(({ id }) => id);
+  public async fetchAllRecords(): Promise<Array<number>> {
+    return Promise.resolve(fakeDatabaseData.map(({ id }) => id));
   }
 }
 
