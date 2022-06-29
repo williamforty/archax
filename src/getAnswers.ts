@@ -6,12 +6,16 @@ const questionTwoAnswer = () => {
   return "Quesion 2.\nThe `for await (const a of [p1, p2, p3]) { ... }` and `[p1, p2, p3].forEach(async (p) { await p })` constructs are similar, but different in an important way. Both initiate the set of promises immediately, however use of await inside a forEach is a common mistake that often results in misleading behaviour, because the forEach completes immediately, and reference to the awaiting promises inside the loop is lost. Conversely, the `for await` construct will actually await each of the promises sequentially, and code execution following the `for await` statement will not be executed until all of the promises have successfully resolved. Incidentally, the `=>` is missing from between `async (p)` and  `{ await p }` in the question :)";
 };
 
+const questionThreeAnswer = () => {
+  return "Quesion 3.\nA Map in JavaScript of course is similar to an array, however it is one where there is an explicit key/value pair for each item it contains. Maps ensure that each key is unique. An object can achieve the same by using object properties, which can indeed be overwritten in the same way you might with a Map.set() call. An advantage of using a Map however is that it is easily iterable, and in a predictable order that corresponds with the order the items were inserted. There are also performance benefits of using a Map, when frequently adding/removing items based on the key. Therefore a good use case for a Map might be for maintaining a large in-memory list of items that is constantly changing. Perhaps something like a Redis in-memory database of items, where speed is an important factor.";
+};
+
 const questionXAnswer = () => {
   return "Quesion X.\n";
 };
 
 const getAnswers = () => {
-  return [questionOneAnswer(), questionTwoAnswer()];
+  return [questionOneAnswer(), questionTwoAnswer(), questionThreeAnswer()];
 };
 
 export { getAnswers };
