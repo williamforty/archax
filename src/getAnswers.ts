@@ -1,3 +1,5 @@
+import { describeType } from "./variableDefinition";
+
 const questionOneAnswer = () => {
   return "Quesion 1.\nThe curly brackets indicate an object, however each will be instantiated separately and will result in a separate object instance. Even though the objects will contain the same data, the instances are different, and therefore the comparision to check if they are equal will result in false. If instead we assigned a single instance of the object to the variable 'foo', and made the comparison 'foo === foo', then this would result in true, as in this case it is the same underlying object instance.";
 };
@@ -26,6 +28,14 @@ const questionSevenAnswer = () => {
   return "Quesion 7.\nPlease refer to src/divideAndConquer.ts, and the corresponding test file. To execute tests, execute `npm run build && npm run test`";
 };
 
+const questionEightAnswer = () => {
+  return `Quesion 8.\nPlease refer to src/variableDefinition.ts.\n\n${describeType()}`;
+};
+
+const questionNineAnswer = () => {
+  return `Quesion 9.\nEnums are intended to be a static list of values representing a set of values for a given purpose. For example, there could be a use case for denoting a fixed list of models for a given car brand. This would work well as an enum type. Enums in TypeScript have a range of helper functions that fundamentally aim to assist with serving that original purpose to represent a fixed list of values. Objects on the other hand are mutable rather than being fixed. That is, objects are intended to be dynamic representations of some kind of data structure or entity, which can potentially adapt and be modified over time.`;
+};
+
 const questionXAnswer = () => {
   return "Quesion X.\n";
 };
@@ -39,6 +49,8 @@ const getAnswers = () => {
     questionFiveAnswer(),
     questionSixAnswer(),
     questionSevenAnswer(),
+    questionEightAnswer(),
+    questionNineAnswer(),
   ];
 };
 
