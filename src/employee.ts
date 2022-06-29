@@ -1,12 +1,12 @@
 interface Record {
   id: number;
-  name: string;
+  colleague: string;
 }
 
 const fakeDatabaseData: Array<Record> = [
-  { id: 101, name: "Adam Bennett" },
-  { id: 102, name: "Chris Davies" },
-  { id: 103, name: "Edgar Flibbertigibbet" },
+  { id: 101, colleague: "Adam Bennett" },
+  { id: 102, colleague: "Chris Davies" },
+  { id: 103, colleague: "Edgar Flibbertigibbet" },
 ];
 
 class Employee {
