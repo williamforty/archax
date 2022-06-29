@@ -36,8 +36,8 @@ const questionNineAnswer = () => {
   return `Quesion 9.\nEnums are intended to be a static list of values representing a set of values for a given purpose. For example, there could be a use case for denoting a fixed list of models for a given car brand. This would work well as an enum type. Enums in TypeScript have a range of helper functions that fundamentally aim to assist with serving that original purpose to represent a fixed list of values. Objects on the other hand are mutable rather than being fixed. That is, objects are intended to be dynamic representations of some kind of data structure or entity, which can potentially adapt and be modified over time.`;
 };
 
-const questionXAnswer = () => {
-  return "Quesion X.\n";
+const questionTenAnswer = () => {
+  return "Quesion 10.\nPlease refer to src/employee.spec.ts to view the required mock, and the corresponding src/employee.ts file to see the implementation of the Employee class, which is overridden by the mock. To execute tests, execute `npm run build && npm run test`";
 };
 
 const getAnswers = () => {
@@ -51,6 +51,7 @@ const getAnswers = () => {
     questionSevenAnswer(),
     questionEightAnswer(),
     questionNineAnswer(),
+    questionTenAnswer(),
   ];
 };
 
